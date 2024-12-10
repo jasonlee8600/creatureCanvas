@@ -1,79 +1,32 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Yale CPSC 490 Thesis Project
 
-# Getting Started
+Abstract: 
+The video game design industry, particularly in franchises like Pokémon, has faced challenges in recent years with generating new and exciting characters. Designers often struggle with ``designer's block,'' limiting their ability to innovate and meet the evolving expectations of fans. As artificial intelligence technologies advance, it is worth exploring how these tools can assist in overcoming creative stagnation. This project aimed to develop a cross-platform mobile application that utilizes AI text-to-image models to generate new Pokémon-like characters. By employing these models, the app offers users a unique way to create imaginative designs that could serve as inspiration for future official Pokémon character designs. In addition to character design generation, this project investigated methods to increase user engagement with the application, focusing on the implementation of a multi-armed bandit algorithm and gamification techniques such as a head-to-head character design matchup voting system and leaderboard. Voting systems and leaderboards are widely used to motivate user engagement by introducing decision-making, competition, and achievement. Through a comprehensive literature review, the effectiveness of these gamification strategies was analyzed. Interestingly, the success of these gamification techniques in boosting engagement depended on various factors like the context they were applied in and user-specific characteristics, such as levels of extroversion and trait competitiveness. For instance, highly extroverted individuals or those with strong competitive tendencies may respond more positively to leaderboards, while others might find such features less engaging or even discouraging. These findings underscore the importance of tailoring gamification techniques to the target audience, highlighting the nuanced relationship between user psychology and engagement strategies. 
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Make sure to install all of the dependencies in the package.json file before running the application!
 
-## Step 1: Start the Metro Server
+To run Creature Canvas on iOS:
+   - Open Simulator app
+   - File > Open Simulator > iPhone 16 Pro
+   - In VSCode terminal:
+      - cd /Users/jasonlee/downloads/school/classes/f2024/cs490/creatureCanvas
+      - npx react-native run-ios
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+To run Creature Canvas on Android:
+   - Open Android Studio
+   - More Actions > Virtual Device Manager
+   - Click play button on "Medium Phone API 35" device
+   - In VSCode terminal:
+      - cd /Users/jasonlee/downloads/school/classes/f2024/cs490/creatureCanvas
+      - npx react-native run-android
 
-To start Metro, run the following command from the _root_ of your React Native project:
+To launch database server:
+   - In VSCode terminal:
+      - cd /Users/jasonlee/downloads/school/classes/f2024/cs490/creatureCanvas/backend
+      - node database.js
 
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+To access MySQL editor via terminal:
+   - In VSCode terminal:
+      - cd /Users/jasonlee/downloads/school/classes/f2024/cs490/creatureCanvas/backend
+      - mysql -u root -p
+      - password is Concord_11
